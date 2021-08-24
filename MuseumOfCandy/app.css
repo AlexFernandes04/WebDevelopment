@@ -1,6 +1,12 @@
 body{
     background-color: #f5d9d5;
     font-family: "Nunito", sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #mainNav .navbar-brand{
@@ -27,6 +33,10 @@ body{
     color: #EA1C2C; 
 }
 
+.red {
+    color: #EA1C2C; 
+}
+
 #headingGroup h2{
     font-weight: 100;
     font-size: 3rem;
@@ -37,24 +47,38 @@ body{
     font-size: 2rem;
 }
 
-.blurb {
+.pink{
     color: #f498b8;    
 }
-
-.radiobtn {
-    color: #f498b8;    
-}
-
 .formHeader {
     color: #EA1C2C; 
     font-size : 1.25rem;
 }
+
 .content {
     margin-top: 50px;
 }
 
+footer {
+    background-color: #C3B1E1;
+    height: 65px;
+}
+
+svg {
+    color: white; 
+}
+
+#small {
+    font-size: 1rem;
+}
+
+footer h2{
+    display: inline-block;
+}
+
 h3 {
     color: white;
+    font-size: 1.5rem;
 }
 .navbar.scrolled {
     background-color: rgb(222, 192, 222);
