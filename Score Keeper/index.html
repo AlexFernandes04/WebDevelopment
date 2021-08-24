@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <title>Score Keeper</title>
+</head>
+
+<body class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="card shadow-lg px-0 col-10  col-md-8 mt-3 my-4">
+            <img class="card-img-top"
+                src="https://img.freepik.com/free-vector/table-tennis-concept_23-2148662188.jpg?size=626&ext=jpg"
+                alt="Ping pong">
+            <div class="card-body">
+                <h2 class="card-title">Ping Pong Score Keeper</h2>
+                <div class="row">
+                    <h1 class="card-text col-3"> <span id="p1display">0</span> to <span id="p2display">0</span></h1>
+                    <h1 id="message" class="card-text col-9 hidden text-success"></h1>
+
+                </div>
+                <div class="form-group">
+                    <div class="row my-3 align-items-end">
+                        <div class="form-group col-6">
+                            <label for="p1Name">Player 1 Username</label>
+                            <input type="text" value="Player 1" class="form-control" id="p1Name"
+                                placeholder="Enter username">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="p2Name">Player 2 Username</label>
+                            <input type="text" value="Player 2" class="form-control" id="p2Name"
+                                placeholder="Enter username">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <label for="exampleFormControlSelect1"><strong>Playing To</strong></label>
+                        </div>
+                        <div class="col-4 col-lg-2">
+                            <select id="playTo" class=" form-select form-select-sm" id="exampleFormControlSelect1">
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mx-0">
+                <button id="p1button" class="col-6 col-md-4 btn btn-info mx-0"> +1 Player 1</button>
+                <button id="p2button" class="col-6 col-md-4 btn btn-warning mx-0"> +1 Player 2</button>
+                <button id="reset" class="col-12 col-md-4 btn btn-danger mx-0"> Reset</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
