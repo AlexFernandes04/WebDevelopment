@@ -1,0 +1,21 @@
+#hero {
+    text-align: left;
+}
+
+#miniBanner {
+    font-size: 1.5rem;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+.img {
+    height: 300px;
+    object-fit: cover;
+}
+
+#mainImg {
+    width: 100%;
+}
