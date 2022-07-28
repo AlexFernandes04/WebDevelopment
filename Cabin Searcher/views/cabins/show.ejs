@@ -1,0 +1,28 @@
+<% layout('layout/boilerplate')%>
+    <div class="col-6 offset-3 mb-3">
+        <div class="card">
+            <img class="card-img-top" src="<%=cabin.image%>" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <%= cabin.title %>
+                </h5>
+                <p class="card-text">
+                    <%= cabin.description %>
+                </p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-muted">
+                    <%= cabin.location %>
+                </li>
+                <li class="list-group-item">$<%= cabin.price %> / night</li>
+            </ul>
+            <div class="card-body">
+                <a href="/cabins/<%= cabin._id%>/edit" class="card-link btn btn-warning">Edit Cabin</a>
+                <form class="d-inline px-3" action="/cabins/<%= cabin._id%>/?_method=DELETE" method="POST">
+                    <button class="btn btn-danger">Delete Cabin</button>
+                </form>
+            </div>
+        </div>
+        <a href="/cabins" class="my-3">Back to Cabins</a>
+
+    </div>
