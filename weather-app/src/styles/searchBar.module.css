@@ -1,0 +1,41 @@
+.Container {
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.searchBar{
+    margin: 10px;
+    height: 40px;
+    width: 20%;
+    border-width: 0px;
+    border-bottom-width: 3px;
+    font-size: 150%;
+    color: gray;
+}
+
+.button {
+    background-color: white;
+    border: 0px;
+    height: 20px;
+    width: 30px;
+    font-size: 170%;
+    color: gray;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.buttonSec{
+    background-color: white;
+    border: 0px;
+    color: gray;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.Inner{
+    padding: 10px;
+    border-bottom: 5px;
+    border-color: gray;
+}
