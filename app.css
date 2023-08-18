@@ -19,3 +19,31 @@
 #mainImg {
     width: 100%;
 }
+
+.gradient1{
+    background: hsla(195, 63%, 90%, 1);
+
+    background: linear-gradient(315deg, hsla(195, 63%, 90%, 1) 0%, hsla(0, 0%, 100%, 1) 48%, hsla(305, 100%, 93%, 1) 100%);
+    
+    background: -moz-linear-gradient(315deg, hsla(195, 63%, 90%, 1) 0%, hsla(0, 0%, 100%, 1) 48%, hsla(305, 100%, 93%, 1) 100%);
+    
+    background: -webkit-linear-gradient(315deg, hsla(195, 63%, 90%, 1) 0%, hsla(0, 0%, 100%, 1) 48%, hsla(305, 100%, 93%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#d7eef6", endColorstr="#ffffff", GradientType=1 );
+}
+
+.gradient2{
+    background: hsla(195, 63%, 90%, 1);
+
+    background: linear-gradient(45deg, hsla(195, 63%, 90%, 1) 0%, hsla(0, 0%, 100%, 1) 48%, hsla(305, 100%, 93%, 1) 100%);
+    
+    background: -moz-linear-gradient(45deg, hsla(195, 63%, 90%, 1) 0%, hsla(0, 0%, 100%, 1) 48%, hsla(305, 100%, 93%, 1) 100%);
+    
+    background: -webkit-linear-gradient(45deg, hsla(195, 63%, 90%, 1) 0%, hsla(0, 0%, 100%, 1) 48%, hsla(305, 100%, 93%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#d7eef6", endColorstr="#ffffff", GradientType=1 );
+}
+
+.title{
+    font-family: 'Gloock', sans-serif;
+}

@@ -1,15 +1,17 @@
 <% layout('layout/boilerplate')%>
     <div class="row">
-        <h1 class="text-center">New Campground</h1>
+        <h1 class="text-center">New Cabin</h1>
         <div class="col-6 offset-3">
-            <form action="/cabins" method="POST" novalidate class="validated-form">
+            <form action="/cabins" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label class="form-label" for="title">Title</label>
                     <input class="form-control" type="text" id="title" name="cabin[title]" required>
+                    <div class="valid-feedback">Looks good!</div>
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="location">Location</label>
                     <input class="form-control" type="text" id="location" name="cabin[location]" required>
+                    <div class="valid-feedback">Looks good!</div>
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="price">Price</label>
@@ -17,15 +19,16 @@
                         <span class="input-group-text" id="price-label">$</span>
                         <input class="form-control" placeholder="0.00" type="text" id="price" name="cabin[price]"
                             required>
+                        <div class="valid-feedback">Looks good!</div>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label" for="image">Image Url</label>
-                    <input class="form-control" type="text" id="image" name="cabin[image]" required>
-                </div>
+                <input type="file" name="iamge" multiple>
                 <div class="mb-3">
                     <label class="form-label" for="description">Description</label>
-                    <textarea class="form-control" type="text" id="description" name="cabin[description]"></textarea>
+                    <textarea class="form-control" type="text" id="description" name="cabin[description]"
+                        required></textarea>
+                    <div class="valid-feedback">Looks good!</div>
+
                 </div>
                 <div class="mb-3">
                     <button class="btn btn-success">Add Cabin</button>
@@ -34,26 +37,3 @@
             <a href="/cabins">Back to Cabins</a>
         </div>
     </div>
-
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.querySelectorAll('.validated-form')
-
-            // Loop over them and prevent submission
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
-    </script>

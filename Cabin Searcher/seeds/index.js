@@ -21,6 +21,7 @@ const seedDB = async () => {
         const randNum = Math.floor(Math.random() * cities.length);
         const price = Math.floor(Math.random() * 20 + 10)
         const newCabin = new Cabin({
+            author: "63029bc5d74ef1556b646cfc",
             location: `${cities[randNum].city}, ${cities[randNum].province_name}`,
             title: `${descriptors[Math.floor(Math.random() * descriptors.length)]} ${places[Math.floor(Math.random() * places.length)]}`,
             image: await images.seedImg(),
